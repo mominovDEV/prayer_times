@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <!-- main css -->
+    <link href="./styles/style.css" rel="stylesheet" />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!--  -->
+  <body class="relative">
+    <div
+      class="loading hidden flex bg-indigo-900 justify-center items-center w-screen h-screen"
+    >
+      <span class="loader"></span>
+    </div>
+    <div class="back absolute -z-10 w-screen h-screen blur-[2px]"></div>
+    <div class="container mx-auto">
+      <div class="flex flex-col justify-around h-[200px] pt-10">
+        <h1 class="text-white text-2xl font-bold text-center">
+          Namoz vaqtlari
+        </h1>
+        <hr class="mx-auto w-3/5 h-[2px] text-white" />
+        <div
+          class="flex justify-between items-center w-[500px] mx-auto text-white"
+        >
+          <h1 class="font-bold">Hududni tanlang:</h1>
+          <div
+            class="selected-region cursor-pointer flex relative items-center justify-between rounded-2xl text-white border-2 border-white py-[2px] px-[2px] w-[199px]"
+          >
+            <h1 class="selected px-5 font-bold">Toshkent</h1>
+            <img
+              src="./images/chevron.png"
+              alt="icon"
+              class="cursor-pointer option w-6 h-6 p-1 rounded-full bg-white active:bg-slate-200"
+            />
+            <div
+              class="absolute text-black font-bold top-8 options w-[199px] h-auto bg-[#ffffffc9] rounded-md hover:cursor-pointer -translate-y-96 duration-500 hidden"
+            >
+              <!-- <h1 class="hover:bg-[#ffffff] px-[25px] py-1 rounded-md">
+                Toshkent
+              </h1>
+              <h1 class="hover:bg-[#ffffff] px-[25px] py-1 rounded-md">
+                Samarqand
+              </h1>
+              <h1 class="hover:bg-[#ffffff] px-[25px] py-1 rounded-md">
+                Andijon
+              </h1>
+              <h1 class="hover:bg-[#ffffff] px-[25px] py-1 rounded-md">
+                Bekobod
+              </h1>
+              <h1 class="hover:bg-[#ffffff] px-[25px] py-1 rounded-md">
+                Qarshi
+              </h1>
+              <h1 class="hover:bg-[#ffffff] px-[25px] py-1 rounded-md">
+                Namangan
+              </h1>
+              <h1 class="hover:bg-[#ffffff] px-[25px] py-1 rounded-md">
+                Nukus
+              </h1> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="flex justify-between w-5/6 mx-auto items-center h-[100px]">
+        <div class="flex justify-between items-center w-1/4">
+          <h1 class="font-bold text-white">Mintaqa:</h1>
+          <h1 class="area font-bold text-yellow-500">Toshkent shahri</h1>
+        </div>
+        <div class="flex justify-between items-center w-[340px]">
+          <img src="./images/calendar (2) 1.svg" alt="img" class="text-white" />
+          <h1 class="date font-bold text-yellow-500">18-sentabr 2022-yil</h1>
+          <h1 class="time-now text-white font-bold">20:58:03</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto">
+      <!--  -->
+      <div class="cards-wrapper flex justify-between items-center">
+        <!--  -->
+        <div
+          class="card flex justify-around items-center flex-col h-[397px] w-[250px] rounded-3xl border-[1px] border-black"
+        >
+          <h1 class="text-2xl text-yellow-500 font-bold">Tong</h1>
+          <img src="./images/isha-prayer 1.svg" alt="moon" />
+          <h1 class="tong text-3xl text-white font-bold">04:58</h1>
+        </div>
+        <!--  -->
+        <div
+          class="card flex justify-around items-center flex-col h-[397px] w-[250px] rounded-3xl border-[1px] border-black"
+        >
+          <h1 class="text-2xl text-yellow-500 font-bold">Quyosh</h1>
+          <img src="./images/sunrise 1.svg" alt="moon" />
+          <h1 class="quyosh text-3xl text-white font-bold">06:05</h1>
+        </div>
+        <!--  -->
+        <div
+          class="card flex justify-around items-center flex-col h-[397px] w-[250px] rounded-3xl border-[1px] border-black"
+        >
+          <h1 class="text-2xl text-yellow-500 font-bold">Peshin</h1>
+          <img src="./images/sun 1 (1).svg" alt="moon" />
+          <h1 class="peshin text-3xl text-white font-bold">12:38</h1>
+        </div>
+        <!--  -->
+        <div
+          class="card flex justify-around items-center flex-col h-[397px] w-[250px] rounded-3xl border-[1px] border-black"
+        >
+          <h1 class="text-2xl text-yellow-500 font-bold">Asr</h1>
+          <img src="./images/sunrise (1) 1.svg" alt="moon" />
+          <h1 class="asr text-3xl text-white font-bold">16:58</h1>
+        </div>
+        <!--  -->
+        <div
+          class="card flex justify-around items-center flex-col h-[397px] w-[250px] rounded-3xl border-[1px] border-black"
+        >
+          <h1 class="text-2xl text-yellow-500 font-bold">Shom</h1>
+          <img src="./images/sunrise (1) 2.svg" alt="moon" />
+          <h1 class="shom text-3xl text-white font-bold">17:48</h1>
+        </div>
+        <!--  -->
+        <div
+          class="card flex justify-around items-center flex-col h-[397px] w-[250px] rounded-3xl border-[1px] border-black"
+        >
+          <h1 class="text-2xl text-yellow-500 font-bold">Xufton</h1>
+          <img src="./images/moon 1.svg" alt="moon" />
+          <h1 class="xufton text-3xl text-white font-bold">19:46</h1>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </body>
+  <!--  -->
+  <script src="./utils/utils.js"></script>
+  <script src="./script/script.js"></script>
+</html>
